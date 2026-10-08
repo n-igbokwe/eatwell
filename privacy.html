@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EatWell privacy policy</title>
+<link rel="icon" href="icon.png">
+<style>
+:root { --bg:#FBFBFA; --raised:#FFFFFF; --text:#1C201E; --text2:#5F6662; --line:#E3E6E4; --accent:#0E7A57; color-scheme: light dark; }
+@media (prefers-color-scheme: dark) { :root { --bg:#101312; --raised:#1C211F; --text:#EDF0EE; --text2:#A5ADA9; --line:#2A302D; --accent:#47C08F; } }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--text); font:17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+main { max-width: 680px; margin: 0 auto; padding: 32px 20px 64px; }
+nav { display:flex; align-items:center; gap:12px; margin-bottom: 32px; }
+nav img { width:44px; height:44px; border-radius:10px; }
+nav a { color:var(--text); text-decoration:none; font-weight:700; }
+nav .links { margin-left:auto; display:flex; gap:16px; font-size:15px; }
+nav .links a { font-weight:500; color:var(--text2); }
+h1 { font-size: 32px; line-height:1.2; margin: 0 0 16px; }
+h2 { font-size: 22px; margin: 36px 0 8px; }
+h3 { font-size: 18px; margin: 24px 0 4px; }
+p, li { color: var(--text); }
+em { color: var(--text2); }
+a { color: var(--accent); }
+table { width:100%; border-collapse: collapse; margin: 12px 0; font-size: 15px; }
+th, td { text-align:left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.hero { text-align:center; padding-top: 24px; }
+.hero img { width: 160px; height:160px; border-radius: 36px; }
+.hero p { color: var(--text2); font-size: 19px; }
+footer { margin-top: 48px; font-size: 14px; color: var(--text2); }
+</style>
+</head>
+<body>
+<main>
+<nav><a href="./"><img src="icon.png" alt=""></a><a href="./">EatWell</a><span class="links"><a href="support.html">Support</a><a href="privacy.html">Privacy</a></span></nav>
+<h1>EatWell privacy policy</h1>
+<p><em>Last updated: 9 October 2026.</em></p>
+<p>EatWell shows the calories, protein, carbohydrate and fat of items on the menus of UK restaurant chains. You can search the menus, build a basket, or share a screenshot of an order and have it read for you. This policy explains what data the app handles, why, and for how long.</p>
+<p>EatWell is run by Nathan Igbokwe, an individual based in the United Kingdom ("we", "us"). Contact: <a href="mailto:nathan@fore.works">nathan@fore.works</a>.</p>
+<h2>The short version</h2>
+<ul>
+<li><strong>No accounts.</strong> We never ask for your name, email address, phone number or location.</li>
+<li><strong>Screenshots are not stored.</strong> A screenshot you scan is sent to our server, read by an AI service, and discarded. It is never written to storage or logs — unless you choose to send us a report (see below).</li>
+<li><strong>Your basket and history stay on your phone.</strong> They are never sent to us.</li>
+<li><strong>No advertising, no tracking, no analytics SDKs, and we never sell data.</strong></li>
+</ul>
+<h2>What we handle, and why</h2>
+<h3>Screenshots you scan</h3>
+<p>Before your first scan, the app tells you that screenshots are sent to Anthropic and asks for your agreement; nothing is sent until you agree. When you scan a screenshot, the image is sent over an encrypted connection to our server, which passes it to <strong>Anthropic</strong> (the provider of the Claude AI model) to read the restaurant and the items on the order. Anthropic processes it under its commercial terms, which do not allow it to use the image to train its models; see Anthropic's privacy policy at <a href="https://www.anthropic.com/legal/privacy">https://www.anthropic.com/legal/privacy</a>. We do not keep the image. Once your result is returned, it is discarded.</p>
+<p>Screenshots can contain more than an order — for example a name or address on a delivery app. Please crop or avoid sharing screenshots that show personal details you do not want processed.</p>
+<h3>Text read from a screenshot</h3>
+<p>We keep a <strong>text-only</strong> record of what was read — the restaurant name and the item names — and how well it matched our menus. It is not linked to your device or to you, so we cannot tell whose scan it was. We use it to fix mistakes and improve matching, and delete it after <strong>90 days</strong>. Separately, we keep an anonymous tally of restaurant and item names we have seen, with no link to any device, so we can learn which menus to add; this is kept indefinitely.</p>
+<p>If you correct a result (for example, pick a different item), the correction is sent as text only, with no link to your device.</p>
+<h3>Searches</h3>
+<p>Search runs on our server. We count how often each search phrase is used and how often it finds nothing, so we know which restaurants to add. We store only the phrase and the counts — no device identifier, no IP address and no time of each search — so nobody, including us, can see what a particular person searched for.</p>
+<h3>A device token</h3>
+<p>On first launch the app gets a random token from our server and sends it with each request. It identifies an installation, not a person: it contains no personal information, we store it only in hashed form, and we use it only to apply fair-use limits (for example, a daily number of scans). It is deleted <strong>90 days</strong> after the app last used it.</p>
+<h3>IP address</h3>
+<p>Our server uses your IP address briefly to limit how many requests one connection can make, which protects the service from abuse. We store it only as a one-way hash inside a short time window and delete that within <strong>one day</strong>. We do not use it to locate or identify you.</p>
+<h3>Reports you choose to send</h3>
+<p>If you tap "Report — this looks wrong", the app shows you exactly what will be sent — the screenshot and the result — and sends it only if you confirm. We use reports to find and fix errors. They are deleted after <strong>90 days</strong>, or sooner if you ask us.</p>
+<h3>On your phone only</h3>
+<p>Your basket, history and recent searches are stored on your device and never sent to us. Deleting the app deletes them.</p>
+<h2>Who processes data for us</h2>
+<table>
+<tr><th>Provider</th><th>What for</th><th>Where</th></tr>
+<tr><td>Supabase</td><td>Hosts our server and database</td><td>United Kingdom (London)</td></tr>
+<tr><td>Anthropic</td><td>Reads screenshots you scan</td><td>United States</td></tr>
+</table>
+<p>Where data leaves the UK, it is protected by the safeguards those providers offer under UK data protection law (such as the UK International Data Transfer Addendum).</p>
+<h2>Legal basis (UK GDPR)</h2>
+<p>We process the data above because it is necessary to provide the service you ask for and in our legitimate interest in keeping it working, accurate and free from abuse. Reports are sent only with your consent, which you can withdraw by asking us to delete them.</p>
+<h2>Your rights</h2>
+<p>You can ask us to access or delete data about you, or object to how we use it, by emailing <a href="mailto:nathan@fore.works">nathan@fore.works</a>. Because we hold nothing that identifies you, we may not be able to find records relating to you, except reports you have sent (tell us roughly when you sent one). You can also complain to the Information Commissioner's Office (ico.org.uk).</p>
+<h2>Children</h2>
+<p>EatWell is not directed at children under 13, and we do not knowingly collect data from them.</p>
+<h2>About the numbers</h2>
+<p>Nutrition figures come from each restaurant's published information; figures we could not find are AI estimates and are labelled "~estimated". They are a guide, not medical or dietary advice. EatWell is not affiliated with, or endorsed by, any of the restaurants it lists.</p>
+<h2>Changes</h2>
+<p>If we change this policy we will update the date above and, for significant changes, tell you in the app.</p>
+
+<footer>EatWell is not affiliated with, or endorsed by, any of the restaurants it lists.</footer>
+</main>
+</body>
+</html>
